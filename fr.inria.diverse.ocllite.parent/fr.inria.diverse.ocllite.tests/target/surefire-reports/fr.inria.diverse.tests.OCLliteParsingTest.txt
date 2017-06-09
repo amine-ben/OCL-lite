@@ -1,5 +1,0 @@
--------------------------------------------------------------------------------
-Test set: fr.inria.diverse.tests.OCLliteParsingTest
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.141 sec - in fr.inria.diverse.tests.OCLliteParsingTest
-loadModel(fr.inria.diverse.tests.OCLliteParsingTest)  Time elapsed: 0.298 sec

@@ -1,8 +1,0 @@
-Manifest-Version: 1.0
-Bundle-SymbolicName: fr.inria.diverse.ocllite.graphx
-Bundle-Name: ocl-lite on graphX
-Bundle-Version: 1.0.0.201704281516
-Require-Bundle: fr.inria.diverse.docl.3rdparty;bundle-version="1.0.0"
-Bundle-ManifestVersion: 2
-Import-Package: org.apache.spark.rdd
-
