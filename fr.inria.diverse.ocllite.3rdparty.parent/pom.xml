@@ -20,16 +20,16 @@
   <dependencyManagement>
     <dependencies>
       <dependency>
-            <groupId>org.apache.spark</groupId>
-            <artifactId>spark-core_2.10</artifactId>
-            <version>1.6.0</version>
-        </dependency>
-        
-        <dependency>
-		    <groupId>org.apache.spark</groupId>
-		    <artifactId>spark-graphx_2.10</artifactId>
-		    <version>1.6.0</version>
-		</dependency>
+          <groupId>org.apache.spark</groupId>
+          <artifactId>spark-core_2.11</artifactId>
+          <version>2.1.1</version>
+      </dependency>
+      <dependency>
+         <groupId>org.apache.spark</groupId>
+         <artifactId>spark-graphx_2.11</artifactId>
+         <version>2.1.1</version>
+     </dependency>
+
     </dependencies>
   </dependencyManagement>
 
@@ -43,7 +43,7 @@
 	      			<extensions>true</extensions>
 	    		</plugin>
 	  </plugins>
-	  
+
 	  <pluginManagement>
       <plugins>
         <plugin>

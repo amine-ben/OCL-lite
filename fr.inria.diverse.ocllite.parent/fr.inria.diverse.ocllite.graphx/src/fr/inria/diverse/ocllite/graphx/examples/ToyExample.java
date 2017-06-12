@@ -2,6 +2,7 @@ package fr.inria.diverse.ocllite.graphx.examples;
 
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.regex.Pattern;
 
@@ -22,12 +23,13 @@ import scala.Tuple2;
  * ...
  * where URL and their neighbors are separated by space(s).
  */
-
+@SuppressWarnings("restriction")
 public final class ToyExample {
 	
   private static final Pattern SPACES = Pattern.compile("\\s+");
 
-  private static class Sum implements Function2<Double, Double, Double> {
+
+private static class Sum implements Function2<Double, Double, Double> {
     /**
 	 * 
 	 */
@@ -39,7 +41,8 @@ public final class ToyExample {
     }
   }
 
-  public static void main(String[] args) throws Exception {
+  @SuppressWarnings("resource")
+public static void main(String[] args) throws Exception {
     if (args.length < 3) {
       System.err.println("Usage: JavaPageRank <master> <file> <number_of_iterations>");
       System.exit(1);
@@ -93,13 +96,13 @@ public final class ToyExample {
 			private static final long serialVersionUID = 1L;
 
 		@Override
-          public Iterable<Tuple2<String, Double>> call(Tuple2<Iterable<String>, Double> s) {
+          public Iterator<Tuple2<String, Double>> call(Tuple2<Iterable<String>, Double> s) {
 	    int urlCount = Iterables.size(s._1);
             List<Tuple2<String, Double>> results = new ArrayList<Tuple2<String, Double>>();
             for (String n : s._1) {
               results.add(new Tuple2<String, Double>(n, s._2() / urlCount));
             }
-            return results;
+            return results.iterator();
           }
       });
 

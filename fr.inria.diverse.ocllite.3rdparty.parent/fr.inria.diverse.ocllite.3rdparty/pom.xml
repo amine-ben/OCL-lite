@@ -14,15 +14,16 @@
   <packaging>bundle</packaging>
 
   <dependencies>
+   	<dependency>
+        <groupId>org.apache.spark</groupId>
+        <artifactId>spark-core_2.11</artifactId>
+
+    </dependency>
     <dependency>
-            <groupId>org.apache.spark</groupId>
-            <artifactId>spark-core_2.10</artifactId>    
-   		</dependency>
-      
-      	<dependency>
-	    	<groupId>org.apache.spark</groupId>
-	    	<artifactId>spark-graphx_2.10</artifactId>
-		</dependency>
+	   <groupId>org.apache.spark</groupId>
+	   <artifactId>spark-graphx_2.11</artifactId>
+
+	</dependency>
   </dependencies>
 
   
